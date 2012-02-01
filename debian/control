@@ -1,0 +1,20 @@
+Source: libhttpclient
+Priority: extra
+Maintainer: Eduard Veleba <veleba@novalighting.cz>
+Build-Depends: debhelper (>= 7), autotools-dev, libcurl4-openssl-dev
+Standards-Version: 3.7.3
+Section: libs
+
+Package: libhttpclient-dev
+Section: libdevel
+Architecture: any
+Depends: libhttpclient1 (= ${binary:Version})
+Description: C++ HTTP client
+ C++ HTTP client
+
+Package: libhttpclient1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ HTTP client
+ C++ HTTP client
